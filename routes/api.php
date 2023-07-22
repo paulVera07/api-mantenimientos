@@ -4,6 +4,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Api\MantenimientoController;
 use App\Http\Controllers\Api\VehiculoController;
+use App\Http\Controllers\Api\VehimantenimientoController;
 
 /*
 |--------------------------------------------------------------------------
@@ -22,3 +23,5 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 Route::apiResource('mantenimiento', MantenimientoController::class);
 
 Route::apiResource('vehiculo', VehiculoController::class);
+
+Route::apiResource('vehiculomantenimiento', VehimantenimientoController::class);
